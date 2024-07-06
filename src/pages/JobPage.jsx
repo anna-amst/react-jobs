@@ -1,5 +1,5 @@
 import { useParams, useLoaderData } from "react-router-dom";
-import { FaArrowLeft } from "react-icons/fa";
+import { FaArrowLeft, FaMapMarker } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
 function JobPage() {
@@ -29,7 +29,7 @@ function JobPage() {
       <div className="container m-auto py-6 px-6">
         <Link
           to="/jobs"
-          className="text-sky-800 hover:text-indigo-600 flex items-center"
+          className="text-sky-800 hover:text-sky-950 flex items-center"
         >
           <FaArrowLeft className="mr-2" /> Back to Job Listings
         </Link>
@@ -43,17 +43,17 @@ function JobPage() {
             <div
               className="bg-white p-6 rounded-lg shadow-md text-center md:text-left"
             >
-              <div className="text-gray-500 mb-4">Full-Time</div>
+              <div className="text-gray-500 mb-4">{job.type}</div>
               <h1 className="text-3xl font-bold mb-4">
-                Senior React Developer
+                {job.title}
               </h1>
               <div
                 className="text-gray-500 mb-4 flex align-middle justify-center md:justify-start"
               >
-                <i
-                  className="fa-solid fa-location-dot text-lg text-orange-700 mr-2"
-                ></i>
-                <p className="text-red-700">Boston, MA</p>
+                <FaMapMarker
+                  className="text-red-700 mr-1"
+                />
+                <p className="text-red-700">{job.location}</p>
               </div>
             </div>
 
@@ -63,12 +63,12 @@ function JobPage() {
               </h3>
 
               <p className="mb-4">
-               We are seeking a talented Front-End Developer to join our team in Boston, MA. The ideal candidate will have strong skills in HTML, CSS, and JavaScript, with experience working with modern JavaScript frameworks such as React or Angular.
+               {job.description}
               </p>
 
               <h3 className="text-sky-800 text-lg font-bold mb-2">Salary</h3>
 
-              <p className="mb-4">$70k - $80K / Year</p>
+              <p className="mb-4">{job.salary} / Year</p>
             </div>
           </main>
 
