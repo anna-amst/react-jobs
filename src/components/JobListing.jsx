@@ -33,8 +33,8 @@ function JobListing({ job }) {
               {job.location}
             </div>
             <Link
-              to={`/job/${job.id}`}
-              className="h-[36px] bg-sky-800 hover:bg-indigo-600 text-white px-4 py-2 rounded-lg text-center text-sm"
+              to={`/jobs/${job.id}`}
+              className="h-[36px] bg-sky-800 hover:bg-sky-950 text-white px-4 py-2 rounded-lg text-center text-sm"
             >
               Read More
             </Link>
