@@ -1,7 +1,7 @@
 import { useState } from "react";
 
 function JobListing({ job }) {
-    const [showFullDescription, setShowFullDescription] = useState(false);
+    const [showFullDescription, setShowFullDescription] = useState(true);
 
     let description= job.description;
 
