@@ -10,7 +10,7 @@ function NotFound() {
         <p className="text-xl mb-5">This page does not exist</p>
         <Link
           to="/"
-          className="text-white bg-indigo-700 hover:bg-indigo-900 rounded-md px-3 py-2 mt-4"
+          className="text-white bg-sky-800 hover:bg-sky-950 rounded-md px-3 py-2 mt-4"
         >
           Go Back
         </Link>
