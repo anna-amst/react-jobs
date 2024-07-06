@@ -25,7 +25,7 @@ function HomeCards() {
             </p>
             <a
               href="/add-job.html"
-              className="inline-block bg-slate-500 text-white rounded-lg px-4 py-2 hover:bg-slate-700"
+              className="inline-block bg-sky-800 text-white rounded-lg px-4 py-2 hover:bg-sky-950"
             >
               Add Job
             </a>
