@@ -8,6 +8,7 @@ function MainLayout() {
     <>
       <NavBar />
       <Outlet />
+      <ToastContainer />
     </>
   );
 }
